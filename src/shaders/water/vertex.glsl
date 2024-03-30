@@ -97,7 +97,7 @@ void main() {
         sin(modelPosition.x * uBigWavesFrequency.x + uTime * uBigWavesSpeed) *
         sin(modelPosition.z * uBigWavesFrequency.y + uTime * uBigWavesSpeed) *
         uBigWavesElevation;
-    elevation += cnoise(vec3(modelPosition.xz, uTime));
+    elevation += cnoise(vec3(modelPosition.xz, uTime * 0.2));
 
     modelPosition.y += elevation;
 
