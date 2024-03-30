@@ -40,8 +40,8 @@ const waterMaterial = new THREE.ShaderMaterial({
 
         uDepthColor: { value: new THREE.Color(debugObject.depthColor) },
         uSurfaceColor: { value: new THREE.Color(debugObject.surfaceColor) },
-        uColorOffset: { value: 0.25 },
-        uColorMultiplier: { value: 2 }
+        uColorOffset: { value: 0.08 },
+        uColorMultiplier: { value: 5 }
     }
 });
 
